@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My First Table</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 700px;
+      }
+
+      th,
+      td {
+        border: 5px double black;
+        padding: 8px;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <table border="1">
+      <tr>
+        <td style="background-color: blue" colspan="3">MY FIRST TABLE</td>
+      </tr>
+      <tr>
+        <td style="background-color: blue">First cell</td>
+        <td style="background-color: blue">Second cell</td>
+        <td
+          style="background-color: yellow"
+          rowspan="3"
+          style="vertical-align: middle"
+        >
+          6 cells merged together
+        </td>
+      </tr>
+      <tr>
+        <td
+          style="background-color: yellow"
+          colspan="2"
+          style="text-align: center"
+        >
+          2 cells merged into one
+        </td>
+      </tr>
+      <tr>
+        <td style="background-color: yellow">1st cell <br />3rd row</td>
+        <td style="background-color: yellow">2nd cell <br />3rd row</td>
+      </tr>
+      <tr>
+        <td style="background-color: yellow" colspan="3">
+          Do you like tables?
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
