@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+</head>
+<body>
+    <h1>Search</h1>
+    <form action=" https://fom.in.ua/echo" method="post">
+        <label for="type_of_transport">Type of transport:</label>
+        <select id="type_of_transport" name="type_of_transport">
+            <option value="Cars">Cars</option>
+            <option value="Trucks">Trucks</option>
+            <option value="Motorcycles">Motorcycles</option>
+        </select><br>
+
+        <label for="body_type">Body type:</label>
+        <select id="body_type" name="body_type">
+            <option value="Sedan">Sedan</option>
+            <option value="Hetchback">Hetchback</option>
+            <option value="Crossover">Crossover</option>
+
+        </select><br><label for="brand">Brand:</label>
+        <select id="brand" name="brand">
+            <option value="Kia">Kia</option>
+            <option value="Audi">Audi</option>
+            <option value="Volkswagen">Volkswagen</option>
+
+        </select><br><label for="manufacturer_country">Manufacturer country:</label>
+        <select id="manufacturer_country" name="manufacturer_country">
+            <option value="Ukraine">Ukraine</option>
+            <option value="China">China</option>
+            <option value="USA">USA</option>
+
+        </select><br><label for="price_from">Price from:</label>
+            <input type="number" id="price_from" name="price_from" min="0" step="0">
+            <label for="price_to">Price to:</label>
+            <input type="number" id="price_to" name="price_to" min="0" step="1">
+                     
+        </select><br><label for="year_from">Year from</label>
+            <input type="number" id="year_from" name="year_from" min="1999" step="0">
+            <label for="year_to">Year to:</label>
+            <input type="number" id="year_to" name="year_to" min="1999" step="1">
+   
+        </select><br><label for="car_condition">Car condition</label>
+            <select id="car_condition" name="car_condition" multiple>
+                <option value="battered">battered</option>
+                <option value="on credit">on credit</option>
+                <option value="customs-free">customs-free</option>
+            
+        </select><br><label for="fuel_type">Fuel type:</label>
+        <select id="fuel_type" name="fuel_type">
+            <option value="gasoline">gasoline</option>
+            <option value="diesel">diesel</option>
+            <option value="gas">gas</option>
+
+        </select><br><label for="color">Color:</label>
+        <select id="color" name="color">
+            <option value="black">black</option>
+            <option value="grey">grey</option>
+            <option value="white">white</option>
+
+        </select><br><label for="comfort">Comfort:</label>
+        <select id="comfort" name="comfort">
+            <option value="sunroof">sunroof</option>
+            <option value="leater_interior">leater interior</option>
+            
+        <input type="submit" value="Search">
+    </form>
+</body>
+</html>
