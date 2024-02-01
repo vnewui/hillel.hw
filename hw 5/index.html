@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Селектори та кольори</title>
+    <style>
+      /* за назвою */
+
+      body {
+        font-family: Arial, serif;
+        margin: 20px;
+      }
+
+      h1 {
+        color: #333;
+      }
+
+      p {
+        color: #1a0535;
+      }
+
+      /* за класом */
+
+      .highlight {
+        background-color: antiquewhite;
+      }
+
+      .multiple-classes {
+        text-decoration: underline;
+      }
+
+      .nested-element {
+        border: 1px solid #6c5f4b;
+        padding: 10px;
+        margin: 10px;
+      }
+
+      .colored-element {
+        padding: 20px;
+        margin: 10px;
+        border: 1px solid #e8e8bb;
+        width: 150px;
+        text-align: center;
+        font-size: 16px;
+      }
+
+      /* за вкладеністю */
+
+      div {
+        background-color: #9b91e2;
+      }
+
+      #element2 {
+        background-color: #466961;
+      }
+
+      .element3 {
+        background-color: #815f81;
+      }
+
+      .element4.special {
+        background-color: #62dede;
+      }
+
+      .parent .element5 {
+        background-color: #a3d17e;
+      }
+
+      /* за id */
+
+      #special-text {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Селектори</h1>
+    <p>
+      Селектори в CSS використовуються для стилізації вибраних елементів на
+      сторінці.
+    </p>
+
+    <h1>Кольори за допомогою селекторів</h1>
+
+    <div class="colored-element">бла бла 1</div>
+    <div id="element2" class="colored-element">бла бла 2</div>
+    <div class="element3">бла бла 3</div>
+    <div class="element4 special">бла бла 4</div>
+    <div class="parent">
+      <div class="element5">бла бла 5</div>
+    </div>
+    <p>Використання селектора за назвою елемента, за id, за класом:</p>
+
+    <div id="special-text" class="highlight multiple-classes">
+      Це особливий текст
+    </div>
+
+    <div class="nested-element">
+      <p>Селектор за вкладеністю може виглядати так:</p>
+      <ul>
+        <li>виу 1</li>
+        <li>виу 2</li>
+      </ul>
+    </div>
+  </body>
+</html>
