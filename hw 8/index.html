@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex</title>
+    <style>
+      .container {
+        background-color: cadetblue;
+        width: 1140px;
+        height: 600px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+      }
+
+      .inner-container,
+      .inner-container-1,
+      .inner-container-2 {
+        width: 100%;
+        height: calc(33.33% - 20px);
+        background-color: lightblue;
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .sub-container {
+        width: 20%;
+        background-color: rgb(54, 40, 68);
+      }
+      .l-sub-container {
+        width: 12%;
+        background-color: rgb(54, 40, 68);
+        margin-bottom: 80px;
+      }
+
+      .inner-container-1 .sub-container:nth-child(2) {
+        margin-right: 10px;
+      }
+      .inner-container-1 .l-sub-container:not(:last-child) {
+        margin-right: -300px;
+      }
+
+      .inner-container-2 .sub-container:nth-child(2) {
+        margin-right: 160px;
+      }
+
+      .inner-container:last-child,
+      .inner-container-1:last-child,
+      .inner-container-2:last-child {
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="inner-container">
+        <div class="sub-container"></div>
+        <div class="sub-container"></div>
+      </div>
+      <div class="inner-container-1">
+        <div class="sub-container"></div>
+        <div class="l-sub-container"></div>
+        <div class="l-sub-container"></div>
+        <div class="l-sub-container"></div>
+        <div class="l-sub-container"></div>
+      </div>
+      <div class="inner-container-2">
+        <div class="sub-container"></div>
+        <div class="sub-container"></div>
+        <div class="sub-container"></div>
+        <div class="sub-container"></div>
+      </div>
+    </div>
+  </body>
+</html>
